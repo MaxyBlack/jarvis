@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+// application.php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Jarvis\ProjectCommand;
+use Symfony\Component\Console\Application;
+
+$output = new Symfony\Component\Console\Output\ConsoleOutput();
+
+$application = new Application('Jarvis',0.1);
+$application->add(new ProjectCommand());
+
+$application->run();

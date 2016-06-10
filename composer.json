@@ -1,0 +1,17 @@
+{
+    "name": "root/jarvis",
+    "require": {
+        "symfony/console": "^3.1"
+    },
+    "authors": [
+        {
+            "name": "Marek Lis",
+            "email": "maxymilian.black@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jarvis\\":"src/"
+        }
+    }
+}
